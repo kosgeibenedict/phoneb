@@ -100,7 +100,7 @@ $(document).ready(function(){
                    data: $("form").serialize(),
                    success:function(data){
                        if(data==="success"){
-                           location.href='https://myfarmmarkethome.com/php/index.php';
+                           location.href='http://www.myfarm.com.yashcomm.com/farm/php/index.php';
                        }else{
                          $("#dis").slideDown().html(data);  
                        }
@@ -173,7 +173,7 @@ $(document).ready(function(){
                     type:'post',
                     data:$("#regform").serialize(),
                     dataType:'text',
-                    url:'https://myfarmmarkethome.com/php/register.php',
+                    url:'http://www.myfarm.com.yashcomm.com/farm/php/register.php',
                     success:function(data){
                         if(data==="success"){
                              window.location.href='login.html';
