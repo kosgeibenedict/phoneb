@@ -95,11 +95,11 @@ $(document).ready(function(){
                $.ajax({
                    type: 'post',
                    dataType:'text',
-                   url:  'php/login.php',
+                   url:  'http://www.myfarm.com.yashcomm.com/farm/php/login.php',
                    data: $("form").serialize(),
                    success:function(data){
                        if(data==="success"){
-                           location.href='php/index.php';
+                           location.href='http://www.myfarm.com.yashcomm.com/farm/php/index.php';
                        }else{
                          $("#dis").slideDown().html(data);  
                        }
@@ -154,7 +154,7 @@ $(document).ready(function(){
                     type:'post',
                     data:$("#regform").serialize(),
                     dataType:'text',
-                    url:'php/register.php',
+                    url:'http://www.myfarm.com.yashcomm.com/farm/php/register.php',
                     success:function(data){
                         $("#err").slideDown().html(firstname);
             }
