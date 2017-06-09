@@ -100,7 +100,7 @@ $(document).ready(function(){
                    data: $("form").serialize(),
                    success:function(data){
                        if(data==="success"){
-                           location.href='php/index.php';
+                           location.href='https://myfarmmarkethome.com/php/index.php';
                        }else{
                          $("#dis").slideDown().html(data);  
                        }
@@ -173,7 +173,7 @@ $(document).ready(function(){
                     type:'post',
                     data:$("#regform").serialize(),
                     dataType:'text',
-                    url:'php/register.php',
+                    url:'https://myfarmmarkethome.com/php/register.php',
                     success:function(data){
                         if(data==="success"){
                              window.location.href='login.html';
