@@ -1,0 +1,146 @@
+@ import url("https://fonts.googleapis.com/css?family=open+Sans:300,400,600,700");
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Calibri', sans-serif;
+	outline: none;
+	border:2px solid brown;
+}
+
+/*Animation*/
+@keyframes shake{
+	10%, 90%{
+		transition: translated3d(-1px,0,0);
+	}
+	20%, 80%{
+		transition: translated3d(2px,0,0);
+	}
+	30%, 50%, 70%{
+		transition: translated3d(-4px,0,0);
+	}
+	40%, 60%{
+		transition: translated3d(4px,0,0);
+	}
+}
+.page-container{
+	width:auto;
+	height: auto;
+	min-height: 100vh;
+	margin: 0 auto;
+	/*padding: 50px 10px 0px 0px;*/
+}
+.comment{
+	margin-top: 10px;
+	width: 90%;
+	height: auto;
+	padding: 7px 12px;
+	margin: 0px auto;
+	margin-bottom: 12px;
+}
+.child{
+	margin-top: 10px;
+	margin-left: 30px;
+	padding-left: 10px;
+}
+.child-comments{
+	border-left: 3px solid rgba(1,1,1,0.2);
+}
+form.main{
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 5px;
+}
+.form-input{
+	border-left: 1px solid rgba(1,1,1,0.3);
+	width: 50%;
+	padding: 4px 7px;
+	font-size: 50px;
+	line-height: 24px;
+	resize: none;
+}
+.form-text{
+	border: 1px solid rgba(1,1,1,0.2);
+	width: 100%;
+	padding: 4px 7px;
+	font-size: 40px;
+	line-height: 30px;
+	resize: none;
+	transition: ease 0.2s all;
+	outline: none !important;
+}
+.form-text-error{
+	border-color: rgba(237,28,36,0.7);
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0,0,0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+.form-text:focus{
+	border-color: rgba(0,114,188,0.7);
+}
+form-submit{
+	/*text-transform: uppercase;*/
+	border: 1px solid rgba(1,1,1,0.3);
+	cursor: pointer;
+	padding: 5px 13px;
+	margin-top: 5px;
+}
+.user, .time{
+	display: inline-block;
+}
+.user{
+	font-size: 40px;
+	color: #0072bc;
+	text-decoration: none;
+	word-break: break-all;
+	line-height: 30px;
+}
+.time{
+	font-size: 33px;
+	color: #b2b1b1;
+	transition: ease 0.2s all;
+}
+.comment:hover .time{
+	color: #767676;
+}
+.comment-text{
+	font-size: 40px;
+	line-height: 37px;
+	color: #222;
+	margin: 2px 10px;
+}
+a{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #222;
+	cursor: pointer;
+	transition: ease 0.3s all;
+}
+a:hover{
+	color: #0072bc;
+}
+.link-reply{
+	color: #767676;
+	margin-left: 60px;
+	font-size: 35px; 
+}
+h1{
+	width: 45%;
+	height: auto;
+	margin: 0px auto;
+	font-size: 30px;
+	font-weight: 300;
+	/*text-transform: uppercase;*/
+	border-bottom: 1px solid rgba(1,1,1,0.2);
+}
+label{
+	font-size: 40px;
+	/*text-transform: uppercase;*/
+	vertical-align: bottom;
+}
+#login{
+	float: right;
+}
